@@ -7,7 +7,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-public class CarDaoImpl implements CarDao {
+public class CarHibernateDaoImpl implements CarHibernateDao {
     private static final EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("hibernatePlayground");
 
     private static EntityManager createEntityManager() {

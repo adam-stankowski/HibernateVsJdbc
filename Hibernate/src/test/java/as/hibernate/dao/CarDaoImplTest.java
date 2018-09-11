@@ -5,19 +5,17 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class CarDaoImplTest {
-    private CarDao carDao;
+    private CarHibernateDao carHibernateDao;
 
     @Before
     public void setUp() {
-        carDao = new CarDaoImpl();
+        carHibernateDao = new CarHibernateDaoImpl();
     }
 
     @Test
     public void havingIdExistsWhenGetSingleThenCarReturned() {
-        Car car = carDao.getById(1L);
+        Car car = carHibernateDao.getById(1L);
         Assert.assertNotNull(car);
     }
 }
