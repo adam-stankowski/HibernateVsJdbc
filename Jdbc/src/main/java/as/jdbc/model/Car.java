@@ -1,12 +1,12 @@
 package as.jdbc.model;
 
-import java.util.Date;
+import java.time.LocalDate;
 
 public class Car {
     private Long id;
     private String make;
     private String model;
-    private Date manufacturedAt;
+    private LocalDate manufacturedAt;
 
     public Long getId() {
         return id;
@@ -32,11 +32,11 @@ public class Car {
         this.model = model;
     }
 
-    public Date getManufacturedAt() {
+    public LocalDate getManufacturedAt() {
         return manufacturedAt;
     }
 
-    public void setManufacturedAt(Date manufacturedAt) {
+    public void setManufacturedAt(LocalDate manufacturedAt) {
         this.manufacturedAt = manufacturedAt;
     }
 }
